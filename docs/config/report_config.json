@@ -1,0 +1,22 @@
+﻿{
+  "pages": [
+    {
+      "title": "Einsatzdaten",
+      "description": "Basic information about this entry.",
+      "sections": [
+        {
+          "title": "c – Critical Bleeding",
+          "description": "Lebensbedrohliche Blutung? Tourniquet, Druckverband",
+          "fields": [
+            {
+              "key": "name",
+              "label": "",
+              "type": "multiline_text",
+              "required": false,
+              "placeholder": "e.g. Site A" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+﻿<!-- dev.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Confirm Dialog Test</title>
+    <link rel="stylesheet" href="../docs/css/styles.css">
+</head>
+<body>
+
+<button id="button_test1">Confirm dialog</button>
+<button id="button_test2">Long message</button>
+<button id="button_test3">Custom labels</button>
+<pre id="result"></pre>
+
+<script type="module" src="../docs/ui/confirm_dialog.js"></script>
+
+<script>
+    const button_test1 = document.getElementById('button_test1');
+    const button_test2 = document.getElementById('button_test2');
+    const button_test3 = document.getElementById('button_test3');
+    const result = document.getElementById('result');
+
+    button_test1.onclick = async () => result.textContent = 'Result: ' + await showConfirmDialog({ title: 'Delete item?', message: 'This cannot be undone.' });
+    button_test2.onclick = async () => result.textContent = 'Result: ' + await showConfirmDialog({ title: 'Delete?', message: 'Very long text. '.repeat(30) });
+    button_test3.onclick = async () => result.textContent = 'Result: ' + await showConfirmDialog({ title: 'Leave page?', message: 'Unsaved changes.', yes: 'Leave', no: 'Stay' });
+</script>
+</body>
+</html>

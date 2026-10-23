@@ -1,0 +1,21 @@
+﻿<!-- dev.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Toast Test</title>
+    <link rel="stylesheet" href="../docs/css/styles.css">
+</head>
+<body>
+
+<button id="button_test1">Test</button>
+
+<script type="module" src="../docs/ui/toast.js"></script>
+
+<script>
+    const button_test1 = document.getElementById('button_test1');
+
+    button_test1.onclick = () => toast("Test");
+</script>
+</body>
+</html>

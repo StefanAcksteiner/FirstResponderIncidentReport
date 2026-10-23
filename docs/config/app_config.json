@@ -1,0 +1,32 @@
+{
+  "appTitle": "Einsatzprotokoll",
+  "send": {
+    "filename": "entries.json",
+    "url": ""
+  },
+  "pages": [
+    {
+      "title": "General",
+      "description": "Basic information about this entry.",
+      "fields": [
+        { "key": "name", "label": "Name", "type": "text", "required": true, "placeholder": "e.g. Site A" },
+        { "key": "category", "label": "Category", "type": "select", "options": ["Inspection", "Delivery", "Repair"], "default": "Inspection" }
+      ]
+    },
+    {
+      "title": "Details",
+      "fields": [
+        { "key": "location", "label": "Location", "type": "text" },
+        { "key": "priority", "label": "Priority", "type": "select", "options": ["Low", "Normal", "High"], "default": "Normal" },
+        { "key": "notes", "label": "Notes", "type": "text" }
+      ]
+    },
+    {
+      "title": "Status",
+      "fields": [
+        { "key": "done", "label": "Completed", "type": "checkbox", "default": false },
+        { "key": "followup", "label": "Needs follow-up", "type": "checkbox", "default": false }
+      ]
+    }
+  ]
+}

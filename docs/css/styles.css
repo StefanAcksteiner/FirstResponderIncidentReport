@@ -1,0 +1,55 @@
+﻿:root{
+    color-scheme:light;
+    --bg:#f4f4f4;
+    --surface:#ffffff;
+    --surface-2:#eeeeee;
+    --text:#1a1a1a;
+    --muted:#737373;
+    --line:#e2e2e2;
+    --accent:#a0800f;
+    --accent-strong:#7f620b;
+    --accent-soft:#f5eedf;
+    --on-accent:#fff;
+    --danger:#d64545;
+    --on-danger:#fff;
+    --danger-soft:#fdeaea;
+    --shadow:0 1px 2px rgba(16,24,40,.05),0 4px 14px rgba(16,24,40,.06);
+    --shadow-lg:0 10px 40px rgba(16,24,40,.22);
+    --scrim:rgba(15,20,25,.45);
+}
+
+:root[data-theme=dark]{
+    color-scheme:dark;
+    --bg:#101010;
+    --surface:#202020;
+    --surface-2:#252525;
+    --text:#eeeeee;
+    --muted:#989898;
+    --line:#303030;
+    --accent:#d0a62f;
+    --accent-strong:#e0bb5b;
+    --accent-soft:#3a3114;
+    --on-accent:#221a05;
+    --danger:#ff7b7b;
+    --on-danger:#2a0d0d;
+    --danger-soft:#3a1c1f;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3);
+    --shadow-lg:0 10px 40px rgba(0,0,0,.6);
+    --scrim:rgba(0,0,0,.6);
+}
+
+.icon-btn{
+    width:42px;
+    height:42px;
+    display:grid;
+    place-items:center;
+    padding:0;
+    border-radius:50%;
+    border:1px solid var(--line);
+    background:var(--surface);
+    color:var(--text);
+    cursor:pointer;
+    transition:background .15s,transform .1s
+}
+.icon-btn:hover{ background:var(--surface-2) }
+.icon-btn:active{ transform:scale(.94) }
